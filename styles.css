@@ -8,16 +8,15 @@
 
     display: grid;
     grid-template-columns: 1fr 4fr;
+    gap: 4px;
   }
   
   .container div {
-    padding: 15px;
+    padding: 10px;
     font-size: 32px;
     font-family: Helvetica;
     font-weight: bold;
     color: white;
-
-    
   }
   
   .header {
@@ -48,8 +47,15 @@
     grid-template-columns: repeat(4, 1fr);
   }
   
+
+
+
+
   .sidebar {
     background-color: #C50208;
+    display: grid;
+    grid-column: span 1;
+    gap: 50px;
   }
   
   .sidebar .photo {
@@ -60,6 +66,10 @@
     border-radius: 10px;
   }
   
+  .sidebar .photo,
+  .sidebar .side-content {
+    padding: 46px;
+  }
   
   .sidebar .side-content {
     background-color: white;
@@ -70,8 +80,14 @@
   
   .nav {
     background-color: #C50208;
+    height: max-content;
   }
   
+  .nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .nav ul li {
     font-size: 16px;
     text-transform: uppercase;
