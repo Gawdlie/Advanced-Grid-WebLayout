@@ -5,6 +5,9 @@
   
   .container {
     text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
   }
   
   .container div {
@@ -13,15 +16,36 @@
     font-family: Helvetica;
     font-weight: bold;
     color: white;
+
+    
   }
   
   .header {
     background-color: #393f4d;
+    display: grid;
+    grid-column: span 2;
   }
   
+  .added-header-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .logo {
+    display: grid;
+    justify-content: left;
+  }
+
   .menu ul,
   .menu li {
     font-size: 16px;
+    
+    margin-top: 6px;
+  }
+
+  .menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   
   .sidebar {
@@ -88,4 +112,8 @@
   .footer p {
     font-size: 13px;
     font-weight: normal;
+  }
+
+  li {
+    list-style-type: none;
   }
